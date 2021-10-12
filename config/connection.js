@@ -1,10 +1,10 @@
 const { connect, connection } = require('mongoose');
 
 
-const connectionString =
+const connectString =
   process.env.MONGODB_URI || 'mongodb://localhost/workout';
 
-connect(connectionString, {
+connect(connectString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
